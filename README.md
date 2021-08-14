@@ -288,7 +288,10 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/rooms/models.py
 
+#### 5.11 Creating Room model Part 7 - Adding OneToMany Relationship between RoomType and Room model
 
+        modified:   README.md
+        modified:   apps/rooms/models.py
 
 
 
