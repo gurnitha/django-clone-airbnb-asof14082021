@@ -250,7 +250,11 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/core/models.py
 
 
+#### 5.4 Creating Room model Part 1 - Creating basic fields
 
+        modified:   README.md
+        modified:   apps/rooms/admin.py
+        modified:   apps/rooms/models.py
 
 
 
