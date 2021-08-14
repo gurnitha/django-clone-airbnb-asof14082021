@@ -189,6 +189,25 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/users/models.py
 
 
+#### -----------
+#### 4. CORE APP
+#### -----------
+
+
+#### 4.1 Create a new app 'apps/core'
+
+        (venv39225) λ mkdir apps\core
+        (venv39225) λ python manage.py startapp core apps\core
+
+        modified:   README.md
+        new file:   apps/core/__init__.py
+        new file:   apps/core/admin.py
+        new file:   apps/core/apps.py
+        new file:   apps/core/migrations/__init__.py
+        new file:   apps/core/models.py
+        new file:   apps/core/tests.py
+        new file:   apps/core/views.py
+
 
 
 
