@@ -5,7 +5,7 @@ from django.db import models
 
 # Create your models here.
 
-class TimeStampedModel(models.Model):
+class MyAbstractTimeStamped(models.Model):
 
     """ Time Stamped Model 
 		This model can be used in any app
@@ -17,4 +17,5 @@ class TimeStampedModel(models.Model):
     updated = models.DateTimeField(auto_now=True)
 
     class Meta:
+        # abstract model is a model that does not go to db
         abstract = True

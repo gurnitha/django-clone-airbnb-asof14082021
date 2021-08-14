@@ -244,7 +244,10 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/rooms/apps.py
         modified:   config/settings.py
 
+#### 5.3 RE-NAMING TimeStampedModel to MyAbstractTimeStamped
 
+        modified:   README.md
+        modified:   apps/core/models.py
 
 
 
