@@ -75,7 +75,10 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/users/tests.py
         new file:   apps/users/views.py       
 
+#### 3.2 Register users app to the project 'settings.py' file
 
+        (venv39225) λ python manage.py check
+        System check identified no issues (0 silenced). 
 
 
 
