@@ -11,6 +11,18 @@ from apps.users.models import MyCustomUser
 # Create your models here.
 
 # AbstractItem model
+class AbstractItem(MyAbstractTimeStamped):
+
+    """ Abstract Item """
+
+    name = models.CharField(max_length=80)
+
+    class Meta:
+        abstract = True
+
+    def __str__(self):
+        return self.name
+
 
 # Room model
 class Room(MyAbstractTimeStamped):

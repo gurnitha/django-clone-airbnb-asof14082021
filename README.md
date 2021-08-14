@@ -278,7 +278,10 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/rooms/migrations/0001_initial.py
         modified:   apps/rooms/models.py
 
+#### 5.9 Creating Room model Part 6 - Creating AbstractItem model 
 
+        modified:   README.md
+        modified:   apps/rooms/models.py
 
 
 
