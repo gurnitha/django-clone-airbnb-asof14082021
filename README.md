@@ -214,7 +214,10 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/core/apps.py
         modified:   config/settings.py
 
+#### 4.3 Create TimeStampedModel model for created and updated fields
 
+        modified:   README.md
+        modified:   apps/core/models.py
 
 
 
