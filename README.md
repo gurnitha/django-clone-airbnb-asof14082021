@@ -208,7 +208,11 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/core/tests.py
         new file:   apps/core/views.py
 
+#### 4.2 Register the new app 'core' to settings.py
 
+        modified:   README.md
+        modified:   apps/core/apps.py
+        modified:   config/settings.py
 
 
 
