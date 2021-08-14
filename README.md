@@ -142,8 +142,10 @@ https://github.com/nomadcoders/airbnb-clone
 
         modified:   README.md
 
+#### 3.7 UserAdmin + MyCustomUserAdmin
 
-
+        modified:   README.md
+        modified:   apps/users/admin.py
 
 
 
