@@ -80,9 +80,41 @@ https://github.com/nomadcoders/airbnb-clone
         (venv39225) λ python manage.py check
         System check identified no issues (0 silenced). 
 
+#### 3.3 Creating CustomUser by Replacing Default User and create database
+
+        (venv39225) λ python manage.py makemigrations
+        (venv39225) λ python manage.py migrate
 
 
+        (venv39225) λ python manage.py sqlmigrate users 0001
+        BEGIN;
+        --
+        -- Create model MyCustomUser
+        --        
+        CREATE TABLE "users_mycustomuser" (
+                "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+                "password" varchar(128) NOT NULL, 
+                "last_login" datetime NULL, 
+                "is_superuser" bool NOT NULL, 
+                "username" varchar(150) NOT NULL UNIQUE, 
+                "first_name" varchar(30) NOT NULL, 
+                "last_name" varchar(150) NOT NULL, 
+                "email" varchar(254) NOT NULL, 
+                "is_staff" bool NOT NULL, 
+                "is_active" bool NOT NULL, 
+                "date_joined" datetime NOT NULL
+        );
 
+        CREATE TABLE "users_mycustomuser_groups" (
+        "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mycustomuser_id" integer NOT NULL REFERENCES "users_mycustomuser" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED);
+        CREATE TABLE "users_mycustomuser_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mycustomuser_id" integer NOT NULL REFERENCES "users_mycustomuser" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED);
+        CREATE UNIQUE INDEX "users_mycustomuser_groups_mycustomuser_id_group_id_4231390f_uniq" ON "users_mycustomuser_groups" ("mycustomuser_id", "group_id");
+        CREATE INDEX "users_mycustomuser_groups_mycustomuser_id_9e5e8f14" ON "users_mycustomuser_groups" ("mycustomuser_id");
+        CREATE INDEX "users_mycustomuser_groups_group_id_4348317b" ON "users_mycustomuser_groups" ("group_id");
+        CREATE UNIQUE INDEX "users_mycustomuser_user_permissions_mycustomuser_id_permission_id_23565a0d_uniq" ON "users_mycustomuser_user_permissions" ("mycustomuser_id", "permission_id");
+        CREATE INDEX "users_mycustomuser_user_permissions_mycustomuser_id_3edfb74d" ON "users_mycustomuser_user_permissions" ("mycustomuser_id");
+        CREATE INDEX "users_mycustomuser_user_permissions_permission_id_ed16a8b3" ON "users_mycustomuser_user_permissions" ("permission_id");
+        COMMIT;
 
 
 
