@@ -283,6 +283,10 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/rooms/models.py
 
+#### 5.10 Creating Room model Part 7 - Creating RoomType model with AbstractItem parameter
+
+        modified:   README.md
+        modified:   apps/rooms/models.py
 
 
 

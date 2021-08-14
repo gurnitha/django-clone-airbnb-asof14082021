@@ -24,6 +24,15 @@ class AbstractItem(MyAbstractTimeStamped):
         return self.name
 
 
+# RoomType model
+class RoomType(AbstractItem):
+
+    """ RoomType Model Definition """
+
+    class Meta:
+        verbose_name = "Room Type"
+
+
 # Room model
 class Room(MyAbstractTimeStamped):
 
