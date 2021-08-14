@@ -263,9 +263,10 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   config/settings.py
 
+#### 5.6 Creating Room model Part 3 - Adding coutry field
 
-
-
+        modified:   README.md
+        modified:   apps/rooms/models.py
 
 
 
