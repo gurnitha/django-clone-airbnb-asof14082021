@@ -128,7 +128,19 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/users/admin.py
 
+#### 3.6 Create superuser
 
+        (venv39225) λ python manage.py createsuperuser
+        Username: ing
+        Email address: ingafter63@gmail.com
+        Password:
+        Password (again):
+        The password is too similar to the username.
+        This password is too short. It must contain at least 8 characters.
+        Bypass password validation and create user anyway? [y/N]: y
+        Superuser created successfully.
+
+        modified:   README.md
 
 
 
