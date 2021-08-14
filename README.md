@@ -22,8 +22,21 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
 
 
+#### ----------------
+#### 2 DJANGO PROJECT
+#### ----------------
 
 
+#### 2.1 Create django project called 'config'
+
+        (venv39225) λ django-admin startproject config .
+
+        modified:   README.md
+        new file:   config/__init__.py
+        new file:   config/settings.py
+        new file:   config/urls.py
+        new file:   config/wsgi.py
+        new file:   manage.py
 
 
 
