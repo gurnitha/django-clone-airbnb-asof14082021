@@ -39,6 +39,14 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   manage.py
 
 
+#### 2.2 Modify settings.py file
+
+        (venv39225) λ python manage.py check
+        System check identified no issues (0 silenced).
+        
+        modified:   README.md
+        modified:   config/settings.py
+
 
 
 
