@@ -43,10 +43,17 @@ https://github.com/nomadcoders/airbnb-clone
 
         (venv39225) λ python manage.py check
         System check identified no issues (0 silenced).
-        
+
         modified:   README.md
         modified:   config/settings.py
 
+#### 2.3 Setting up static and media files root and path
+
+        (venv39225) λ python manage.py check
+        System check identified no issues (0 silenced).
+
+        modified:   README.md
+        modified:   config/settings.py
 
 
 
