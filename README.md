@@ -147,8 +147,46 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/users/admin.py
 
+#### 3.8 Modify MyCustomUser's model fields (removed migration files and re-run migrations)
 
+        (venv39225) λ python manage.py sqlmigrate users 0001
+        BEGIN;
+        --
+        -- Create model MyCustomUser
+        --
+        CREATE TABLE "users_mycustomuser" (
+                "id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, 
+                "password" varchar(128) NOT NULL, 
+                "last_login" datetime NULL, 
+                "is_superuser" bool NOT NULL, 
+                "username" varchar(150) NOT NULL UNIQUE, 
+                "first_name" varchar(30) NOT NULL, 
+                "last_name" varchar(150) NOT NULL, 
+                "email" varchar(254) NOT NULL, 
+                "is_staff" bool NOT NULL, 
+                "is_active" bool NOT NULL, 
+                "date_joined" datetime NOT NULL, 
+                "avatar" varchar(100) NOT NULL, 
+                "gender" varchar(10) NOT NULL, 
+                "bio" text NOT NULL, 
+                "birthdate" date NULL, 
+                "language" varchar(2) NOT NULL, 
+                "currency" varchar(3) NOT NULL, 
+                "superhost" bool NOT NULL
+                );
+        CREATE TABLE "users_mycustomuser_groups" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mycustomuser_id" integer NOT NULL REFERENCES "users_mycustomuser" ("id") DEFERRABLE INITIALLY DEFERRED, "group_id" integer NOT NULL REFERENCES "auth_group" ("id") DEFERRABLE INITIALLY DEFERRED);
+        CREATE TABLE "users_mycustomuser_user_permissions" ("id" integer NOT NULL PRIMARY KEY AUTOINCREMENT, "mycustomuser_id" integer NOT NULL REFERENCES "users_mycustomuser" ("id") DEFERRABLE INITIALLY DEFERRED, "permission_id" integer NOT NULL REFERENCES "auth_permission" ("id") DEFERRABLE INITIALLY DEFERRED);
+        CREATE UNIQUE INDEX "users_mycustomuser_groups_mycustomuser_id_group_id_4231390f_uniq" ON "users_mycustomuser_groups" ("mycustomuser_id", "group_id");
+        CREATE INDEX "users_mycustomuser_groups_mycustomuser_id_9e5e8f14" ON "users_mycustomuser_groups" ("mycustomuser_id");
+        CREATE INDEX "users_mycustomuser_groups_group_id_4348317b" ON "users_mycustomuser_groups" ("group_id"); CREATE UNIQUE INDEX "users_mycustomuser_user_permissions_mycustomuser_id_permission_id_23565a0d_uniq" ON "users_mycustomuser_user_permissions" ("mycustomuser_id", "permission_id");
+        CREATE INDEX "users_mycustomuser_user_permissions_mycustomuser_id_3edfb74d" ON "users_mycustomuser_user_permissions" ("mycustomuser_id");
+        CREATE INDEX "users_mycustomuser_user_permissions_permission_id_ed16a8b3" ON "users_mycustomuser_user_permissions" ("permission_id");
+        COMMIT;
 
+        modified:   README.md
+        modified:   apps/users/migrations/0001_initial.py
+        deleted:    apps/users/migrations/0002_auto_20210814_0816.py
+        modified:   apps/users/models.py
 
 
 
