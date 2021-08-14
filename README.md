@@ -249,7 +249,6 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/core/models.py
 
-
 #### 5.4 Creating Room model Part 1 - Creating basic fields
 
         modified:   README.md
@@ -268,8 +267,16 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/rooms/models.py
 
+#### 5.7 Creating Room model Part 4 - Adding host field with OneToMany Relationship with MyCustomUser
 
+        modified:   README.md
+        modified:   apps/rooms/models.py
 
+#### 5.8 Creating Room model Part 5 - Run migrations
+
+        modified:   README.md
+        new file:   apps/rooms/migrations/0001_initial.py
+        modified:   apps/rooms/models.py
 
 
 
