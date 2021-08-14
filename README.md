@@ -56,6 +56,24 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   config/settings.py
 
 
+#### -----------
+#### 3. USER APP
+#### -----------
+
+
+#### 3.1 Create a new app called 'apps/users'
+
+        (venv39225) λ mkdir apps\users
+        (venv39225) λ python manage.py startapp users apps/users
+
+        modified:   README.md
+        new file:   apps/users/__init__.py
+        new file:   apps/users/admin.py
+        new file:   apps/users/apps.py
+        new file:   apps/users/migrations/__init__.py
+        new file:   apps/users/models.py
+        new file:   apps/users/tests.py
+        new file:   apps/users/views.py       
 
 
 
