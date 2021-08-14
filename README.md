@@ -117,6 +117,11 @@ https://github.com/nomadcoders/airbnb-clone
         COMMIT;
 
 
+#### 3.4 Adding fields to MyCustomeUser model
+
+        modified:   README.md
+        new file:   apps/users/migrations/0002_auto_20210814_0816.py
+        modified:   apps/users/models.py
 
 
 
