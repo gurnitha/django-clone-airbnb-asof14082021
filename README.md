@@ -238,7 +238,11 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/rooms/tests.py
         new file:   apps/rooms/views.py
 
+#### 5.2 Register the rooms app to settings.py
 
+        modified:   README.md
+        modified:   apps/rooms/apps.py
+        modified:   config/settings.py
 
 
 
