@@ -123,7 +123,10 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/users/migrations/0002_auto_20210814_0816.py
         modified:   apps/users/models.py
 
+#### 3.5 Activating django admin and cusomizing its dashboard display
 
+        modified:   README.md
+        modified:   apps/users/admin.py
 
 
 
