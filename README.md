@@ -256,8 +256,12 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/rooms/admin.py
         modified:   apps/rooms/models.py
 
+#### 5.5 Creating Room model Part 2 - Install django_countries
 
+        (venv39225) λ pip install django_countries
 
+        modified:   README.md
+        modified:   config/settings.py
 
 
 
