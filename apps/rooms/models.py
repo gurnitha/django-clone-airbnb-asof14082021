@@ -17,6 +17,11 @@ class AbstractItem(MyAbstractTimeStamped):
 
     name = models.CharField(max_length=80)
 
+    """ 
+    --------As its name AbstractItem, it will not be seen in admin dashboard--------
+
+    """
+
     class Meta:
         abstract = True
 
@@ -29,8 +34,80 @@ class RoomType(AbstractItem):
 
     """ RoomType Model Definition """
 
+    """ 
+    --------After running the migrations the real fields will be as seen bellow--------
+    name='RoomType',
+    fields=[
+        ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        ('created', models.DateTimeField(auto_now_add=True)),
+        ('updated', models.DateTimeField(auto_now=True)),
+        ('name', models.CharField(max_length=80)),
+    ],
+    """
+
     class Meta:
         verbose_name = "Room Type"
+
+
+# Amenity model
+class Amenity(AbstractItem):
+
+    """ Amenity Model Definition """
+
+    """ 
+    --------After running the migrations the real fields will be as seen bellow--------
+    name='Amenity',
+    fields=[
+        ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        ('created', models.DateTimeField(auto_now_add=True)),
+        ('updated', models.DateTimeField(auto_now=True)),
+        ('name', models.CharField(max_length=80)),
+    ],
+    """
+
+    class Meta:
+        verbose_name_plural = "Amenities"
+
+
+
+# Facility model
+class Facility(AbstractItem):
+
+    """ Facility Model Definition """
+
+    """ 
+    --------After running the migrations the real fields will be as seen bellow--------
+    name='Facility',
+    fields=[
+        ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        ('created', models.DateTimeField(auto_now_add=True)),
+        ('updated', models.DateTimeField(auto_now=True)),
+        ('name', models.CharField(max_length=80)),
+    ],
+    """
+    class Meta:
+        verbose_name_plural = "Facilities"
+
+
+
+# HouseRule model
+class HouseRule(AbstractItem):
+
+    """ HouseRule Model Definition """
+    
+    """ 
+    --------After running the migrations the real fields will be as seen bellow--------
+    name='HouseRule',
+    fields=[
+        ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
+        ('created', models.DateTimeField(auto_now_add=True)),
+        ('updated', models.DateTimeField(auto_now=True)),
+        ('name', models.CharField(max_length=80)),
+    ],
+    """
+    class Meta:
+        verbose_name = "House Rule"
+
 
 
 # Room model

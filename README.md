@@ -288,30 +288,38 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/rooms/models.py
 
-#### 5.11 Creating Room model Part 7 - Adding OneToMany Relationship between RoomType and Room model
+#### 5.11 Creating Room model Part 8 - Adding OneToMany Relationship between RoomType and Room model
 
         modified:   README.md
         modified:   apps/rooms/models.py
 
-#### 5.12 Creating Room model Part 8 - Register RoomType model to admin and Run migrations
+#### 5.12 Creating Room model Part 9 - Register RoomType model to admin and Run migrations
 
         modified:   README.md
         modified:   apps/rooms/admin.py
         new file:   apps/rooms/migrations/0002_auto_20210814_2259.py
         modified:   apps/rooms/models.py
 
-#### 5.13 Creating Room model Part 8 - Modifying room_type field form OneTomany relationship to ManyToMany relationship
+#### 5.13 Creating Room model Part 10 - Modifying room_type field form OneTomany relationship to ManyToMany relationship
 
         modified:   README.md
         new file:   apps/rooms/migrations/0003_auto_20210815_1619.py
         modified:   apps/rooms/models.py
 
-#### 5.14 Creating Room model Part 8 - Modifying room_type field form ManyToMany to OneTomany relationship
+#### 5.14 Creating Room model Part 11 - Modifying room_type field form ManyToMany to OneTomany relationship
 
         modified:   README.md
         new file:   apps/rooms/migrations/0004_auto_20210815_1746.py
         modified:   apps/rooms/models.py
 
+#### 5.15 Creating Room model Part 12 - Create Amenity, Facility, and HouseRule  models and register them to admin
+
+        modified:   README.md
+        modified:   apps/rooms/admin.py
+        new file:   apps/rooms/migrations/0005_amenity.py
+        new file:   apps/rooms/migrations/0006_facility.py
+        new file:   apps/rooms/migrations/0007_houserule.py
+        modified:   apps/rooms/models.py
 
 
 
