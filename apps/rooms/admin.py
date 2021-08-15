@@ -7,7 +7,7 @@ from django.contrib import admin
 from apps.rooms.models import (
 	Room, RoomType,
 	Amenity, Facility,
-	HouseRule)
+	HouseRule, Photo)
 
 # Register your models here.
 admin.site.register(Amenity)
@@ -22,3 +22,6 @@ class RoomAdmin(admin.ModelAdmin):
 class RoomTypeAdmin(admin.ModelAdmin):
 	pass
 
+@admin.register(Photo)
+class PhotoAdmin(admin.ModelAdmin):
+    pass

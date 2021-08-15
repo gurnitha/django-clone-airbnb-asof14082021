@@ -136,3 +136,17 @@ class Room(MyAbstractTimeStamped):
 
     def __str__(self):
         return self.name
+
+
+
+# Photo model
+class Photo(MyAbstractTimeStamped):
+
+    """ Photo Model Definition """
+
+    caption = models.CharField(max_length=80)
+    file = models.ImageField(upload_to='uploads/images/photos/')
+    room = models.ForeignKey(Room, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return self.caption
