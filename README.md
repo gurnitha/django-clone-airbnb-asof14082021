@@ -300,7 +300,11 @@ https://github.com/nomadcoders/airbnb-clone
         new file:   apps/rooms/migrations/0002_auto_20210814_2259.py
         modified:   apps/rooms/models.py
 
+#### 5.13 Creating Room model Part 8 - Modifying room_type field form OneTomany relationship to ManyToMany relationship
 
+        modified:   README.md
+        new file:   apps/rooms/migrations/0003_auto_20210815_1619.py
+        modified:   apps/rooms/models.py
 
 
 
