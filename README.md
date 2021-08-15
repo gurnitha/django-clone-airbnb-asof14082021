@@ -293,6 +293,13 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   README.md
         modified:   apps/rooms/models.py
 
+#### 5.12 Creating Room model Part 8 - Register RoomType model to admin and Run migrations
+
+        modified:   README.md
+        modified:   apps/rooms/admin.py
+        new file:   apps/rooms/migrations/0002_auto_20210814_2259.py
+        modified:   apps/rooms/models.py
+
 
 
 

@@ -11,3 +11,7 @@ from apps.rooms.models import Room, RoomType
 class RoomAdmin(admin.ModelAdmin):
 	pass
 
+@admin.register(RoomType)
+class RoomTypeAdmin(admin.ModelAdmin):
+	pass
+
