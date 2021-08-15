@@ -11,6 +11,8 @@ from apps.rooms.models import (
 
 # Register your models here.
 admin.site.register(Amenity)
+admin.site.register(Facility)
+admin.site.register(HouseRule)
 
 @admin.register(Room)
 class RoomAdmin(admin.ModelAdmin):

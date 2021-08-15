@@ -322,6 +322,12 @@ https://github.com/nomadcoders/airbnb-clone
         modified:   apps/rooms/models.py
 
 
+#### 5.16 Creating Room model Part 13 - Adding amenities, facilities, and house_rules fields to Room model with ManyToMany relationship
+
+        modified:   README.md
+        modified:   apps/rooms/admin.py
+        new file:   apps/rooms/migrations/0008_auto_20210815_2011.py
+        modified:   apps/rooms/models.py
 
 
 
